@@ -71,36 +71,7 @@ function Filters() {
           <option value="low">low</option>
         </select>
       </div>
-      <div className="form-control">
-        <label for="price" className="label cursor-pointer">
-          <span className="label-text capitalize">select price</span>
-          <span>${inputvalue}.00</span>
-        </label>
-        <input
-          type="range"
-          value={inputvalue}
-          onChange={(e) => setinputvalue(e.target.value)}
-          className="range range-primary range-sm"
-        />
-        <div className="w-full flex justify-between text-xs px-2 mt-2">
-          <span className="font-bold text-md">0</span>
-          <span className="font-bold text-md">Max : $100.00</span>
-        </div>
-      </div>
-      <div className="form-control items-center">
-        <label for="shipping" className="label cursor-pointer">
-          <span className="label-text capitalize">free shipping</span>
-        </label>
-        <input
-          type="checkbox"
-          name="shipping"
-          className="checkbox checkbox-primary checkbox-sm"
-        />
-      </div>
-      <input type="button" className="btn btn-primary btn-sm" value="search" />
-      <Link className="btn btn-accent btn-sm" to="/products">
-        reset
-      </Link>
+      
     </form>
   );
 }
